@@ -29,7 +29,7 @@ const languages = [
 function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <a className={`logo ${compact ? 'logo--compact' : ''}`} href="#top" aria-label="Beeload home">
-      <span className="logo-mark" aria-hidden="true"><span /></span>
+      <img className="logo-image" src="/assets/images/20260922_182011_0000.png" alt="" aria-hidden="true" />
       {!compact && <span className="logo-word">beeload<span>.</span></span>}
     </a>
   );
@@ -79,7 +79,7 @@ function App() {
           <div className="hero-aside">
             <div className="hero-aside-label">01 <span>{t('featured')}</span></div>
             <a className="feature-card" href="#publications">
-              <div className="feature-visual"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="visual-core">B</div><span className="visual-caption">AGI / 01</span></div>
+              <div className="feature-visual"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="visual-core"><img src="/assets/images/20260922_182011_0000.png" alt="" aria-hidden="true" /></div><span className="visual-caption">AGI / 01</span></div>
               <div className="feature-info"><div className="card-kicker">{t('researchPaper')} <span>08.14.26</span></div><h2>Autonomous Agent Frameworks &amp; AGI Trajectories</h2><span className="card-link">{t('readPaper')} <ArrowUpRight size={16} /></span></div>
             </a>
           </div>
@@ -99,7 +99,7 @@ function App() {
 
         <section className="statement-section" id="disclosure"><div className="section-wrap statement-inner"><Quote size={31} className="quote-mark" /><blockquote>{t('disclosureQuote')}</blockquote><p>{t('disclosureText')}</p><div className="statement-signature"><span className="signature-line" /> {t('disclosurePrinciples')}</div></div></section>
 
-        <section className="company section-wrap" id="company"><div className="company-heading"><span className="section-number">02</span><div><p className="section-label">{t('lab')}</p><h2>{t('institutionalTitle')}<br /><span>{t('institutionalEmphasis')}</span></h2></div></div><div className="company-grid"><div className="company-copy"><p className="lead">{t('institutionalLead')}</p><p>{t('institutionalBody')}</p><a className="text-link" href="mailto:ceo@beeload.it">{t('contact')} <ArrowUpRight size={17} /></a></div><div className="institutional-panel"><span className="panel-index">BEELOAD / 2026</span><div className="institutional-orbit"><div className="institutional-core">B</div></div><span className="panel-caption">RESEARCH / SAFETY / SCALE</span></div></div></section>
+        <section className="company section-wrap" id="company"><div className="company-heading"><span className="section-number">02</span><div><p className="section-label">{t('lab')}</p><h2>{t('institutionalTitle')}<br /><span>{t('institutionalEmphasis')}</span></h2></div></div><div className="company-grid"><div className="company-copy"><p className="lead">{t('institutionalLead')}</p><p>{t('institutionalBody')}</p><a className="text-link" href="mailto:ceo@beeload.it">{t('contact')} <ArrowUpRight size={17} /></a></div><div className="institutional-panel"><span className="panel-index">BEELOAD / 2026</span><div className="institutional-orbit"><div className="institutional-core"><img src="/assets/images/20260922_182011_0000.png" alt="" aria-hidden="true" /></div></div><span className="panel-caption">RESEARCH / SAFETY / SCALE</span></div></div></section>
 
         <section className="contact-band section-wrap" id="development"><div><span className="section-label">{t('contactQuestion')}</span><h2>{t('letsExplore')}</h2></div><a className="button button--light" href="mailto:ceo@beeload.it">{t('contactLab')} <ArrowUpRight size={16} /></a></section>
       </main>
